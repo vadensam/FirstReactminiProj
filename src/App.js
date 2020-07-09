@@ -1,18 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import FirstComponent from './components/AnewComponent';
+import PersonCard from './components/PersonCard';
 
 function App() {
   return (
-    <div >
-      <h1>Hello Dojo!</h1>
-      <ul>
-        <p><b>Things I need to do!</b></p>
-        <li> Learn React</li>
-        <li> Climb something tall</li>
-        <li> Be a guest on the Graham Norton Show</li>
-        <li> Take out the trash</li>
-      </ul>
+    <div>
+    <FirstComponent />
+    <PersonCard fname={"Diane"} lname={"Soyer"} age={"98"} hair={"grey"}/>
+    <PersonCard fname={"Carlos"} lname={"Montoya"} age={"39"} hair={"brown"}/>
     </div>
   );
 }
